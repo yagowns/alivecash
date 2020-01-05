@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" http-equiv="refresh" content="1200">
+	<title>btc</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> <!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> <!-- Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="javascript/jquery-3.1.1.min.js"></script> <!-- Jquery -->
+	<script src="javascript/bootstrap.min.js"></script> <!-- Bootstrap -->
+	<script src="javascript/easytimer.js"></script> <!-- Easy Timer -->
+	<script src="javascript/custom2.js"></script>
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+	<!-- Fonts -->
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <h1>Wealth is no longer material.</h1>
+  <hr>
+  <h4>Yago Murakami</h4>
+  <h4>Open Data, Data Visualization, Real-time, Blockchain, Bitcoin.</h4>
+  <hr>
+  <p><i>[A]Live Cash</i> é um website / instalação audiovisual que explora a visualização e sonorização de transações monetárias em Bitcoins, criando um espaço efêmero e delicado que apresenta em tempo real a frequência e valor das transações.
+  <br><br>
+  A representação visual destas transações são através de esferas, tendo o seu tamanho, desfoque e som aumentados de acordo com o valor de cada transação, possuindo sons agudos e baixos com esferas bem definidas para transações de cêntimos, e imensos borrões com sons altos e graves para transações maiores. No momento em que a transação é computada, uma equação converte o valor em bitcoin para dólares, e logo depois em sua forma, som, posição e direção de animação.
+  <br><br>
+  Além da dimensão contemplativa (visando uma instalação do projeto), o site por si só possui uma dimensão interativa onde ela existe através da inatividade do usuário. O site reconhece certos marcos em relação a quantidades de bitcoins acumuladas, valor único, acumulação monetária, e tempo permanecido no site, assim, recompensando o usuário com marcos e medalhas.
+  <br><br>
+  O aglomerado de transações depende unicamente da situação no qual o mercado se encontra, sendo extremamente volátil e instável, a obra pode variar de acordo com momentos extremamente ativos ou inativos do mercado, também existindo a possibilidade da Bitcoin chegar a um preço tão alto, que essa visualização passaria apenas a apresentar esferas enormes e sons gravíssimos, assim representando organicamente o momento atual do mercado e da vida da Bitcoin, propondo uma imersão do usuário adentro de uma dimensão infinita e imprevisível.
+  </p>
+  <br>
+  <div class="volumedial">
+	  <div id="volumedisplay">VOLUME 50%</div>
+	  <input id="range" type="range" min="0" max="1" step="0.01" value="0.5">
+  </div>
+  <div class="btnfw">
+  	<button type="button" class="btnbtc" id="moreinfo">+ / - INFO</button>
+  	<button type="button" class="btnbtc" id="achivements" onclick="openNav2()">CONQUISTAS</button>
+  </div>
+</div>
+
+<div id="mySidenav2" class="sidenav2">
+ 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+ 	<div class="achmarginleft">
+	 	<h1>Conquistas</h1>
+		<hr>
+		<div class="breakline">
+			<p id="achtxt01" class="fallbacktxt">
+				<img src="images/00.png" id="achimg01" class="fallbackimg">phu9H8d80ANIaxjAXJ90mo</p>
+		</div>
+		<div class="breakline">			
+			<p id="achtxt02" class="fallbacktxt">
+				<img src="images/00.png" id="achimg02" class="fallbackimg">phu9H8d80ANIaxjAXJ90mo</p>
+		</div>
+		<div class="breakline">
+			<p id="achtxt03" class="fallbacktxt">
+				<img src="images/00.png" id="achimg03" class="fallbackimg">phu9H8d80ANIaxjAXJ90mo</p>
+		</div>
+		<div class="breakline">
+			<p id="achtxt04" class="fallbacktxt">
+				<img src="images/00.png" id="achimg04" class="fallbackimg">phu9H8d80ANIaxjAXJ90mo</p>
+		</div>
+		<div class="breakline">
+			<p id="achtxt05" class="fallbacktxt">
+				<img src="images/00.png" id="achimg05" class="fallbackimg">phu9H8d80ANIaxjAXJ90mo</p>
+		</div>
+		<div class="breakline">
+			<p id="achtxt06" class="fallbacktxt">
+				<img src="images/00.png" id="achimg06" class="fallbackimg">phu9H8d80ANIaxjAXJ90mo</p>
+		</div>
+		<div class="breakline">
+			<p id="achtxt07" class="fallbacktxt">
+				<img src="images/00.png" id="achimg07" class="fallbackimg">phu9H8d80ANIaxjAXJ90mo</p>
+		</div>
+		<div class="breakline">
+			<p id="achtxt08" class="fallbacktxt">
+				<img src="images/00.png" id="achimg08" class="fallbackimg">phu9H8d80ANIaxjAXJ90mo</p>
+		</div>
+		<div class="breakline">
+			<p id="achtxt09" class="fallbacktxt">
+				<img src="images/00.png" id="achimg09" class="fallbackimg">phu9H8d80ANIaxjAXJ90mo</p>
+		</div>
+		<div class="breakline">
+			<p id="achtxt10" class="fallbacktxt">
+				<img src="images/00.png" id="achimg10" class="fallbackimg">phu9H8d80ANIaxjAXJ90mo</p>
+		</div>
+		<div class="breakline">
+			<p id="achtxt11" class="fallbacktxt">
+				<img src="images/00.png" id="achimg11" class="fallbackimg">phu9H8d80ANIaxjAXJ90mo</p>
+		</div>
+		<div class="breakline">
+			<p id="achtxt12" class="fallbacktxt">
+				<img src="images/00.png" id="achimg12" class="fallbackimg">phu9H8d80ANIaxjAXJ90mo</p>
+		</div>
+		<div class="breakline">
+			<p id="achtxt13" class="fallbacktxt">
+				<img src="images/00.png" id="achimg13" class="fallbackimg">phu9H8d80ANIaxjAXJ90mo</p>
+		</div>
+		<div class="breakline">
+			<p id="achtxt14" class="fallbacktxt">
+				<img src="images/00.png" id="achimg14" class="fallbackimg">phu9H8d80ANIaxjAXJ90mo</p>
+		</div>
+		<div class="breakline">
+			<p id="achtxt15" class="fallbacktxt">
+				<img src="images/00.png" id="achimg15" class="fallbackimg">phu9H8d80ANIaxjAXJ90mo</p>
+		</div>
+ 	</div>
+</div>
+
+<div id="main">
+	<div id="infos">
+		<div id="containerlog">
+			<div id="log"></div>
+		</div>
+		<div class="divider"></div>
+		<div id="time">
+    		<div class="values">00:00:00</div>
+		</div>
+		<h1 id="upbtc">0.00 BTC</h1>
+		<h1 id="at">@</h1>
+		<h1 id="exchange">0000.00 USD</h1>
+		<h1 id="upusd">&asymp; 0.00 USD</h1>
+	</div>
+	<div class="artearea">
+		<div id="circle01"></div>
+		<div id="circle02"></div>
+		<div id="circle03"></div>
+		<div id="circle04"></div>
+		<div id="circle05"></div>
+		<div id="circle06"></div>
+		<div id="circle07"></div>
+		<div id="circle08"></div>
+		<div id="circle09"></div>
+		<div id="circle10"></div>
+		<div id="circle11"></div>
+		<div id="circle12"></div>
+		<div id="circle13"></div>
+		<div id="circle14"></div>
+		<div id="circle15"></div>
+		<div id="circle16"></div>
+		<div id="circle17"></div>
+		<div id="circle18"></div>
+		<div id="circle19"></div>
+		<div id="circle20"></div>
+		<div id="circle21"></div>
+		<div id="circle22"></div>
+		<div id="circle23"></div>
+		<div id="circle24"></div>
+		<div id="circle25"></div>
+		<div id="circle26"></div>
+		<div id="circle27"></div>
+		<div id="circle28"></div>
+		<div id="circle29"></div>
+		<div id="circle30"></div>
+		<div id="circle31"></div>
+		<div id="circle32"></div>
+		<div id="circle33"></div>
+		<div id="circle34"></div>
+	</div>
+</div>
+</body>
+	<script src="javascript/custom.js"></script>	
+</html>

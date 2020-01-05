@@ -1,0 +1,697 @@
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%
+	height: 100%;
+	background-color: #0c0d18;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/*Volume*/
+
+.range {
+  display: inline-block;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  position: relative;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 80%;
+  height: 2px;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 510%;
+  background: #0c0d18;
+  margin-top: -5px;
+  cursor: pointer;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+/*Volume*/
+
+.rightside {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	z-index: 1;
+}
+
+.volumedial {
+	margin-left: 20px;
+	margin-right: 40px;
+
+}
+
+
+#volumedisplay {
+	color: #ffffff;
+	font-family: 'Rubik', sans-serif;
+	margin-bottom: 10px;
+	text-align: center;
+	color: #0c0d18;
+}
+
+.btnbtc {
+	background-color: #ffffff;
+	border: none;
+	color: #0c0d18;
+	padding: 10px;
+	text-align: center;
+	outline: none;
+	display: inline-block;
+	font-size: 16px;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+	width: 100%;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+.btnbtc:hover {
+	background-color: #0c0d18;
+	color: #00ff7b;
+}
+
+.btnfw {
+	margin-right: 60px;
+	margin-top: 20px;
+
+	text-align: center;
+}
+
+/* First Vizu */
+#artarea {
+	position: fixed;
+	z-index: 0;
+}
+
+#infos {
+	bottom: 25px;
+	position: fixed;
+	margin-left: 20px;
+	margin-right: 20px;
+	position: fixed;
+	line-height: 0.5;
+	z-index: 1;
+	opacity: 1;
+
+}
+
+.achpush {
+	background-color: #00ff7b;
+	width: 400px;
+	height: 95px;
+	display: inline-block;
+	margin-top: 15px;
+	position: fixed;
+	transform: translateX(-415px);
+	animation: pushpush 5s;
+	z-index: 2;
+}
+
+@keyframes pushpush {
+	0% {
+	transform: translateX(-415px);
+	}
+	25% {
+	transform: translateX(0px);
+	}
+	75% {
+	transform: translateX(0px);
+	}
+	100% {
+	transform: translateX(-415px);
+	}
+}
+
+.imgach {
+	display: inline-block;
+	position: relative;
+	width: 70px;
+	padding-right: 10px;
+	margin-top: 17px;
+	margin-left: 130px;
+}
+
+.txtach {
+	display: inline-block;
+	position: relative;
+	text-align: left;
+	top: 11px;
+	font-size: 15px;
+	font-family: 'Rubik', sans-serif;
+}
+
+.logo {
+	position: fixed;
+	z-index: 7;
+	display: inline-block;
+}
+
+.logo h1 {
+	font-size: 2em;
+	color: #ffffff;
+	text-align: left;
+	font-family: 'Rubik Mono One', sans-serif;
+	font-family: 400;
+	margin-left: 15px;
+}
+
+.logo .about1 {
+	margin-top: -10px;
+	margin-left: 15px;
+	letter-spacing: 10px;
+ 	font-size: 1.4em;
+	color: #ffffff;
+	text-align: left;
+	font-family: 'Rubik', sans-serif;
+	font-family: 100;
+	display: none;
+}
+
+.logo:hover .about1 {
+	display: block;
+	cursor: pointer;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #00ff7b;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 0px;
+    transition: 0.5s;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #0c0d18;
+    display: block;
+}
+
+.sidenav h1 {
+	margin-left: 20px;
+	margin-right: 100px;
+	font-size: 23px;
+	color: #0c0d18;
+	text-align: left;
+	font-family: 'Rubik', sans-serif;
+	font-family: 900;
+}
+
+
+.sidenav h4 {
+	margin-left: 20px;
+	margin-right: 100px;
+	font-size: 15px;
+	color: #0c0d18;
+	text-align: left;
+	font-family: 'Rubik', sans-serif;
+	font-family: 400;
+}
+
+.sidenav p {
+	margin-left: 20px;
+	margin-right: 40px;
+	font-size: 13.8px;
+	color: #0c0d18;
+	text-align: left;
+	font-family: 'Rubik', sans-serif;
+	font-family: 100;
+}
+
+.sidenav hr {
+	margin-left: 20px;
+	margin-right: 40px;
+	border: 1px solid #ffffff;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 0px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: 0.5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#containerlog {
+	position:relative;
+}
+
+#log {
+	display: table;
+	position: relative;
+	z-index: 1;
+}
+
+.log2 {
+	font-size: 11px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	color: #ffffff;
+	text-align: left;
+	font-family: 'Rubik', sans-serif;
+	font-family: 100;
+}
+
+.divider {
+	border: 1px solid #ffffff;
+	width: 200px;
+	margin-top: 7px;
+
+}
+
+#time {
+	font-size: 14px;
+	line-height: 3;
+	color: #ffffff;
+	text-align: left;
+	font-family: 'Rubik', sans-serif;
+	font-family: 100;
+}
+
+#upusd {
+	font-size: 22px;
+	line-height: 0;
+	color: #ffffff;
+	text-align: left;
+	font-family: 'Rubik', sans-serif;
+	font-family: 900;
+}
+
+#upbtc {
+	font-size: 22px;
+	line-height: 0;
+	color: #ffffff;
+	text-align: left;
+	font-family: 'Rubik', sans-serif;
+	font-family: 900;
+	display: inline;
+}
+
+#at {
+	font-size: 22px;
+	line-height: 0;
+	color: #ffffff;
+	text-align: left;
+	font-family: 'Rubik', sans-serif;
+	font-family: 900;
+	display: inline;
+}
+
+#exchange {
+	font-size: 22px;
+	line-height: 0;
+	color: #ffffff;
+	text-align: left;
+	font-family: 'Rubik', sans-serif;
+	font-family: 900;
+	display: inline;
+}
+
+#aprox {
+	font-size: 22px;
+	line-height: 0;
+	color: #ffffff;
+	text-align: left;
+	font-family: 'Rubik', sans-serif;
+	font-family: 900;
+}
+
+/*Achivements*/
+.sidenav2 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    padding-top: 0px;
+    transition: 0.5s;
+}
+
+/* The navigation menu links */
+.sidenav2 a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #0c0d18;
+    display: block;
+}
+
+.sidenav2 h1 {
+	margin-left: 20px;
+	margin-right: 100px;
+	font-size: 23px;
+	color: #0c0d18;
+	text-align: left;
+	font-family: 'Rubik', sans-serif;
+	font-family: 900;
+}
+
+
+.sidenav2 h4 {
+	margin-left: 20px;
+	margin-right: 100px;
+	font-size: 15px;
+	color: #0c0d18;
+	text-align: left;
+	font-family: 'Rubik', sans-serif;
+	font-family: 400;
+}
+	
+.sidenav2 hr {
+	margin-left: 20px;
+	border: 1px solid #00ff7b;
+}
+
+.sidenav2 .fallbacktxt {
+	display: inline-block;
+	text-decoration: line-through;
+	opacity: 0.25;
+	margin-left: 20px;
+}
+
+.sidenav2 .fallbackimg {
+	display: inline-block;
+	width: 70px;
+	opacity: 0.25;
+	padding-right: 10px;
+	margin-left: 20px;
+}
+
+.sidenav2 .breakline {
+	display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav2 a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav2 .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 0px;
+}
+
+.sidenav2 .achmarginleft {
+	margin-left: 400px;
+	margin-right: 40px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*Achivements*/
+
+.hottips {
+	background-color: #00ff7b;
+	width: 300px;
+	height: 150px;
+	right: 0;
+	display: inline-block;
+	margin-top: 15px;
+	position: fixed;
+	transform: translateX(315px);
+	animation: pushpushpush 100s;
+	z-index: 2;
+}
+
+@keyframes pushpushpush {
+	0% {
+	transform: translateX(315px);
+	}
+	1.25% {
+	transform: translateX(0px);
+	}
+	98.75% {
+	transform: translateX(0px);
+	}
+	100% {
+	transform: translateX(315px);
+	}
+}
+
+@keyframes pushback {
+	0% {
+	transform: translateX(0px);
+	}
+	100% {
+	transform: translateX(315px);
+	}
+}
+
+.hottips h4 {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 14px;
+	color: #0c0d18;
+	text-align: left;
+	font-family: 'Rubik', sans-serif;
+	font-family: 400;
+}
+
+.hottips p {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 12px;
+	color: #0c0d18;
+	text-align: left;
+	font-family: 'Rubik', sans-serif;
+	font-family: 100;
+}
+
+.hottips b {
+	font-family: 'Rubik Mono One', sans-serif;
+	font-family: 100;
+	margin-left: 10px; 
+}
+
+
+#circle01 {
+	filter: blur(0px);
+	mix-blend-mode: screen;
+}
+
+#circle02 {
+	filter: blur(0px);
+	mix-blend-mode: screen;
+}
+
+#circle03 {
+	filter: blur(0px);
+	mix-blend-mode: screen;
+}
+
+#circle04 {
+	filter: blur(0px);
+	mix-blend-mode: screen;
+}
+
+#circle05 {
+	filter: blur(0.5px);
+	mix-blend-mode: screen;
+}
+
+#circle06 {
+	filter: blur(1px);
+	mix-blend-mode: screen;
+}
+
+#circle07 {
+	filter: blur(2px);
+	mix-blend-mode: screen;
+}
+
+#circle08 {
+	filter: blur(3px);
+	mix-blend-mode: screen;
+}
+
+#circle09 {
+	filter: blur(4px);
+	mix-blend-mode: screen;
+}
+
+#circle10 {
+	filter: blur(5px);
+	mix-blend-mode: screen;
+}
+
+#circle11 {
+	filter: blur(7px);
+	mix-blend-mode: screen;
+}
+
+#circle12 {
+	filter: blur(9px);
+	mix-blend-mode: screen;
+}
+
+#circle13 {
+	filter: blur(12px);
+	mix-blend-mode: screen;
+}
+
+#circle14 {
+	filter: blur(15px);
+	mix-blend-mode: screen;
+}
+
+#circle15 {
+	filter: blur(18px);
+	mix-blend-mode: screen;
+}
+
+#circle16 {
+	filter: blur(21px);
+	mix-blend-mode: screen;
+}
+
+#circle17 {
+	filter: blur(24px);
+	mix-blend-mode: screen;
+}
+
+#circle18 {
+	filter: blur(27px);
+	mix-blend-mode: screen;
+}
+
+#circle19 {
+	filter: blur(30px);
+	mix-blend-mode: screen;
+}
+
+#circle20 {
+	filter: blur(34px);
+	mix-blend-mode: screen;
+}
+
+#circle21 {
+	filter: blur(38px);
+	mix-blend-mode: screen;
+}
+
+#circle22 {
+	filter: blur(42px);
+	mix-blend-mode: screen;
+}
+
+#circle23 {
+	filter: blur(47px);
+	mix-blend-mode: screen;
+}
+
+#circle24 {
+	filter: blur(52px);
+	mix-blend-mode: screen;
+}
+
+#circle25 {
+	filter: blur(57px);
+	mix-blend-mode: screen;
+}
+
+#circle26 {
+	filter: blur(63px);
+	mix-blend-mode: screen;
+}
+
+#circle27 {
+	filter: blur(69px);
+	mix-blend-mode: screen;
+}
+
+#circle28 {
+	filter: blur(75px);
+	mix-blend-mode: screen;
+}
+
+#circle29 {
+	filter: blur(82px);
+	mix-blend-mode: screen;
+}
+
+#circle30 {
+	filter: blur(89px);
+	mix-blend-mode: screen;
+}
+
+#circle31 {
+	filter: blur(97px);
+	mix-blend-mode: screen;
+}
+
+#circle32 {
+	filter: blur(107px);
+	mix-blend-mode: screen;
+}
+
+#circle33 {
+	filter: blur(114px);
+	mix-blend-mode: screen;
+}
+
+#circle34 {
+	filter: blur(124px);
+	mix-blend-mode: screen;
+}
+
